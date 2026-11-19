@@ -1,19 +1,19 @@
-# Translations
+# 译文与注释
 
-A static reading library for classical Sanskrit, Tibetan, and Japanese texts. Start at [the catalogue](index.html). Each standalone reader credits its witnesses, and the [sources page](sources.html) explains the applicable reuse terms.
+梵文、藏文和古典日语的静态读本。请从[总目录](index.html)选择读本。各读本注明所据版本，[来源与许可](sources.html)列出底本、辞典与字体的使用条款。
 
 ## GitHub Pages
 
-The intended repository is [zenith-john/translations](https://github.com/zenith-john/translations) and the site address is [zenith-john.github.io/translations](https://zenith-john.github.io/translations/).
+发布仓库为 [zenith-john/translations](https://github.com/zenith-john/translations)，站点地址为 [zenith-john.github.io/translations](https://zenith-john.github.io/translations/)。
 
-The site files are at the repository root, with `.nojekyll` for direct static serving. Push the local `main` branch to the GitHub repository, then select **Settings → Pages → Deploy from a branch → main → / (root)**. Relative links support both local opening and the `/translations/` project path. [GitHub Pages publishing source](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+站点文件位于仓库根目录，使用 `.nojekyll` 直接提供静态文件。将本地 `main` 分支推送至 GitHub 后，在仓库设置的 **Pages** 页面选择从分支部署，指定 `main` 分支及根目录 `/ (root)`。相对链接适用于本地预览和 `/translations/` 项目路径。[GitHub Pages 发布源设置](https://docs.github.com/zh/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 
-## Public reading editions
+## 公开读本
 
-- `classical-japanese/` contains the five versions without the published modern Chinese translations.
-- `sanskrit-tibetan/` contains the parallel readers with the classical or independently prepared Chinese texts. The *Mūlamadhyamakakārikā* uses Kumārajīva’s classical Chinese.
-- The *Lotus Sūtra* and *Diamond Sūtra* publish the project’s Chinese drafts and link to the source editions.
-- Tibetan word cards in the parallel readers use Chinese glosses, with links to the dictionary sources. Sanskrit word cards retain their English glosses and morphology.
-- Source and font credits apply per reader. GRETIL’s noncommercial and share-alike conditions apply to the transcriptions that carry that license.
+- `classical-japanese/` 收录四部古典日语作品的原文及注释，已移除其他书籍的现代中文译文。
+- `sanskrit-tibetan/` 收录梵藏对照读本、古代汉译或独立编写的中文译稿。《中论颂》采用鸠摩罗什汉译。
+- 《妙法莲华经》和《金刚经》收录本项目的中文译稿，并附底本链接。
+- 藏文词卡附中文释义及辞典链接。梵文词卡附英文释义及词形分析。
+- 底本与字体的声明见各读本。GRETIL 电子转录本须遵循相应的非商业使用及相同方式共享条款。
 
-Keep source archives, EPUBs, PDFs, dictionary dumps, and conversion caches in the working collection outside this repository. The Pages repository contains the public reading files.
+原始资料、EPUB、PDF、辞典数据和转换缓存请保存在本仓库以外的工作目录。

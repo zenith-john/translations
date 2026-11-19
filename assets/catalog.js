@@ -6,7 +6,7 @@ const status = document.getElementById('find-status');
 const collections = [...document.querySelectorAll('.collection')];
 
 function normalize(text) {
-  return text.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
+  return text.normalize('NFD').replace(/\p{M}|[《》〈〉]/gu, '').toLowerCase();
 }
 
 function filterCatalogue() {
@@ -15,8 +15,8 @@ function filterCatalogue() {
   for (const collection of collections) {
     let remaining = 0;
     for (const item of collection.querySelectorAll('.work-list > li')) {
-      const title = normalize(item.textContent);
-      const shown = terms.every(term => title.includes(term));
+      const searchableText = normalize(`${item.textContent} ${item.dataset.search ?? ''}`);
+      const shown = terms.every(term => searchableText.includes(term));
       item.hidden = !shown;
       if (shown) remaining++;
     }
@@ -24,7 +24,7 @@ function filterCatalogue() {
     matches += remaining;
   }
   status.textContent = terms.length
-    ? matches ? `${matches} ${matches === 1 ? 'text' : 'texts'} found` : 'No titles match your search.'
+    ? matches ? `找到 ${matches} 部读本` : '未找到匹配的读本。'
     : '';
 }
 
