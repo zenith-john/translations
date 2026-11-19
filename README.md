@@ -11,7 +11,7 @@ The site files are at the repository root, with `.nojekyll` for direct static se
 ## Public reading editions
 
 - `classical-japanese/` contains the five versions without the published modern Chinese translations.
-- `sanskrit-tibetan/` contains the parallel readers with the classical or independently prepared Chinese texts. The full *Mūlamadhyamakakārikā* uses Kumārajīva’s classical Chinese. Its single-verse reference includes a new AI-assisted Chinese rendering.
+- `sanskrit-tibetan/` contains the parallel readers with the classical or independently prepared Chinese texts. The *Mūlamadhyamakakārikā* uses Kumārajīva’s classical Chinese.
 - The *Lotus Sūtra* and *Diamond Sūtra* publish the project’s Chinese drafts and link to the source editions.
 - Tibetan word cards in the parallel readers use Chinese glosses, with links to the dictionary sources. Sanskrit word cards retain their English glosses and morphology.
 - Source and font credits apply per reader. GRETIL’s noncommercial and share-alike conditions apply to the transcriptions that carry that license.
